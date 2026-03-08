@@ -1,0 +1,122 @@
+.page {
+  padding-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.hint {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.uploadRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.fileInput {
+  display: none;
+}
+
+.error {
+  color: var(--expense);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.success {
+  color: var(--income);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.manualForm {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.manualGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  padding: 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.table th {
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.table tbody tr:hover {
+  background: var(--bg-elevated);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.pageNums {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.pageLabel {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding: 0 0.5rem;
+}
+
+.pageActive {
+  background: var(--accent-dim) !important;
+  color: var(--accent) !important;
+}
+
+@media (max-width: 768px) {
+  .table th:nth-child(5),
+  .table td:nth-child(5) {
+    display: none;
+  }
+}
